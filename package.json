@@ -1,0 +1,25 @@
+{
+    "name": "latl-vscode",
+    "displayName": "latl-vscode",
+    "description": "Syntax highlighting for .latl",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "latl",
+            "aliases": ["latl", "LATL"],
+            "extensions": [".latl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "latl",
+            "scopeName": "text.latl",
+            "path": "./syntaxes/latl.tmLanguage.json"
+        }]
+    }
+}
